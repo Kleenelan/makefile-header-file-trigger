@@ -5,7 +5,7 @@
 extern "C"{
 #endif
 
-float div_(float a, float b)
+API_ float div_(float a, float b)
 {
     if(b!=0.0f)
         return a/b;

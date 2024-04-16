@@ -1,6 +1,7 @@
 #ifndef __ICARITHMETIC_H__
 #define __ICARITHMETIC_H__
 
+#include "internal/constant.h"
 
 #ifdef __cplusplus
 extern "C"{

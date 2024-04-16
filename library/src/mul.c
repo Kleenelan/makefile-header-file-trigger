@@ -3,7 +3,7 @@
 extern "C" {
 #endif
 
-float mul_(float a, float b)
+API_ float mul_(float a, float b)
 {
     return a*b;
 }

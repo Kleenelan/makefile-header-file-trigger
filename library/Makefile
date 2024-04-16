@@ -10,12 +10,13 @@ SRC_C := \
 	 	src/circ.c \
 		src/div.c \
 		src/mul.c \
-		src/sub.c
+		src/sub.c \
+		src/util.c
 
 OBJ_C := $(SRC_C:.c=.c.o)
 DEP_C := $(SRC_C:.c=.d) 
 
-CPP_FLAGS := $(DEBUG_FLAGS) -fPIC
+CPP_FLAGS := $(DEBUG_FLAGS) -fPIC -fvisibility=hidden -fvisibility-inlines-hidden  -Wno-unused-result -Werror=vla
 INC := -I./include/internal
 LD_FLAGS := 
 

@@ -4,7 +4,7 @@
 extern "C"{
 #endif
 
-float sub_(float a, float b)
+API_ float sub_(float a, float b)
 {
     return a - b;
 }
