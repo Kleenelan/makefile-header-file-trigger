@@ -1,0 +1,14 @@
+
+SRC_CPP := \
+	  	src/add.cpp \
+	 	src/circ.cpp \
+		src/div.cpp \
+		src/mul.cpp \
+		src/sub.cpp \
+		src/util.cpp \
+		src/math_icIvectorAdd.cpp \
+		src/math_icSvectorAdd.cpp
+
+SRC_CU := \
+		dev/icIvectorAdd.cu \
+		dev/icSvectorAdd.cu
