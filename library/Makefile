@@ -37,7 +37,7 @@ DXX := nvcc
 #-MF --dependency-output
 #-MP --generate-dependency-targets  
 %.cu.o: %.cu
-	$(DXX) $(CU_FLAGS) $(INC_CU) $< -c -o $@ -MMD -MF $*.cu.d -MP
+	$(DXX) $(GPU_ARCH) $(CU_FLAGS) $(INC_CU) $< -c -o $@ -MMD -MF $*.cu.d -MP
 	
 #--generate-nonsystem-dependencies-with-compile --dependency-output $*.cu.d --generate-dependency-targets
 
